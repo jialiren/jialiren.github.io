@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="PHP前四天PHP语法使用 如果php标记处于当前文件内所有代码的最后，可以不书写结束标记，也推荐不写； 每一行php代码的最后必须添加分号； 如果当前php代码段具有结束标记时，可以省略最后一句代码后的分后，但是不推荐； php中变量声明使用：$变量名；变量命名规则不要使用$，开头不能使用数字；变量名要区分大小写； php中的数据类型： string字符串 int整数类型 float浮点数小数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2018/01/24/PHP笔记/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="PHP前四天PHP语法使用 如果php标记处于当前文件内所有代码的最后，可以不书写结束标记，也推荐不写； 每一行php代码的最后必须添加分号； 如果当前php代码段具有结束标记时，可以省略最后一句代码后的分后，但是不推荐； php中变量声明使用：$变量名；变量命名规则不要使用$，开头不能使用数字；变量名要区分大小写； php中的数据类型： string字符串 int整数类型 float浮点数小数">
+<meta property="og:updated_time" content="2017-12-16T00:31:25.606Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="PHP前四天PHP语法使用 如果php标记处于当前文件内所有代码的最后，可以不书写结束标记，也推荐不写； 每一行php代码的最后必须添加分号； 如果当前php代码段具有结束标记时，可以省略最后一句代码后的分后，但是不推荐； php中变量声明使用：$变量名；变量命名规则不要使用$，开头不能使用数字；变量名要区分大小写； php中的数据类型： string字符串 int整数类型 float浮点数小数">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Buscar"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-PHP笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/01/24/PHP笔记/" class="article-date">
+  <time datetime="2018-01-24T07:19:12.204Z" itemprop="datePublished">2018-01-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="PHP前四天"><a href="#PHP前四天" class="headerlink" title="PHP前四天"></a>PHP前四天</h1><h2 id="PHP语法使用"><a href="#PHP语法使用" class="headerlink" title="PHP语法使用"></a>PHP语法使用</h2><ul>
+<li>如果php标记处于当前文件内所有代码的最后，可以不书写结束标记，也推荐不写；</li>
+<li>每一行php代码的最后必须添加分号；</li>
+<li>如果当前php代码段具有结束标记时，可以省略最后一句代码后的分后，但是不推荐；</li>
+<li>php中变量声明使用：$变量名；变量命名规则不要使用$，开头不能使用数字；变量名要区分大小写；</li>
+<li>php中的数据类型：<ul>
+<li><strong>string字符串</strong></li>
+<li><strong>int整数类型</strong></li>
+<li><strong>float浮点数小数</strong></li>
+<li><strong>boolean布尔</strong></li>
+<li><strong>null</strong></li>
+<li><strong>array</strong></li>
+<li><strong>object</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="string-字符串类型"><a href="#string-字符串类型" class="headerlink" title="string 字符串类型"></a>string 字符串类型</h2><ul>
+<li>string字符串类型的使用<ul>
+<li><strong>php中同样也可以使用成对的单引号或双引号进行标识；当我们使用双引号时，内部的转义符可以使用；</strong></li>
+<li><strong>当我们使用单引号进行标识时，不会识别内部变量名，转义符可以使用，虽然\可以正常显示，但是还是推荐使用’\ \’的方式</strong>；</li>
+<li><strong>如果使用双引号标识时，内部的值为其他的某个变量名，会进行变量解析；如果内部的变量名和后面的其他字符连接了，也无法识别，可以使用空格分开；</strong></li>
+<li>总结：双引号标识时：<ul>
+<li>可以使用特殊字符转义功能；</li>
+<li>可以进行变量解析；</li>
+<li>在不需要特殊功能的时候，推荐使用单引号；</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>string字符串的拼接<ul>
+<li>在php中+只表示加法操作，如果需要进行字符串连接操作，需要使用：点‘.’操作符；</li>
+</ul>
+</li>
+<li>流程控制<ul>
+<li>顺序结构</li>
+<li>分支结构if switch</li>
+<li>循环结构 for while forEach</li>
+</ul>
+</li>
+</ul>
+<h2 id="数组类型"><a href="#数组类型" class="headerlink" title="数组类型"></a>数组类型</h2><ul>
+<li><p>使用echo的方式打印数组显示的只是类型名，所以需要使用var_dump();</p>
+</li>
+<li><p>Var_dump();用于检测类型，并且打印出具体值；print_r()打印关于变量的易于理解的信息。</p>
+</li>
+<li><p>当我们需要将打印在页面的让用户查看时，使用echo；如果自己进行程序调试时，可以使用var_dump();</p>
+</li>
+<li><p>使用[]这种的数组创建方式在php5.6以后才可以支持；常用方式：$arr=array();</p>
+</li>
+<li><p>Php中除了索引数组以外，还有一种关联数组(相当于js中的对象)</p>
+<ul>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$arr = <span class="keyword">array</span>(</span><br><span class="line">	<span class="string">'key1'</span> =&gt; <span class="number">100</span>,</span><br><span class="line">	<span class="string">'key2'</span> =&gt; <span class="number">200</span>,</span><br><span class="line">	<span class="string">'key3'</span> =&gt; <span class="number">300</span></span><br><span class="line">);</span><br><span class="line">var_dump($arr);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>属性名也可以使用字符串中的变量解析功能；当我们使用关联数组时，推荐将属性名设置为字符串，并且通常推荐使用单引号，需要使用变量解析时才使用双引号；</p>
+</li>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$foo = <span class="string">'jack'</span>;</span><br><span class="line">	$arr = <span class="keyword">array</span>(</span><br><span class="line">		foo =&gt; <span class="number">100</span>,<span class="comment">//foo虽然没加引号，但是也可以识别为属性名foo</span></span><br><span class="line">		$foo =&gt; <span class="number">1000</span>,<span class="comment">//$foo不会被识别，所以设置不生效</span></span><br><span class="line">		<span class="string">'$foo'</span> =&gt; <span class="number">200</span>,<span class="comment">//属性名为单引号标识的字符串，内部变量名不会解析，属性名为$foo</span></span><br><span class="line">		<span class="string">"$foo"</span> =&gt; <span class="number">200</span>,<span class="comment">//属性名为双引号标识的字符串，内部进行了变量解析，属性名为jack</span></span><br><span class="line">		<span class="string">"key3"</span> =&gt; <span class="number">300</span>,<span class="comment">//基本书写方式</span></span><br><span class="line">		<span class="string">'key4'</span> =&gt; <span class="number">400</span> <span class="comment">//基本书写方式</span></span><br><span class="line">	);</span><br><span class="line">	<span class="keyword">echo</span> $arr[<span class="string">'key3'</span>] . <span class="string">"\n"</span>;</span><br><span class="line">	var_dump($arr);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Php中没有像js中的各种属性访问方式，全部都是php内置的函数；</p>
+</li>
+<li><p>count()的作用与js中的length属性相同，用于获取数组元素个数；用于for循环；</p>
+</li>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$arr = <span class="keyword">array</span>(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>);</span><br><span class="line">	<span class="keyword">echo</span> count($arr);</span><br><span class="line">	<span class="keyword">for</span>($i = <span class="number">0</span>; $i &lt; count($arr) ; $i++)&#123;</span><br><span class="line">		<span class="keyword">echo</span> $i;<span class="comment">//索引值01234</span></span><br><span class="line">		<span class="keyword">echo</span> $arr[$i];<span class="comment">//元素值12345</span></span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>forEach使用方法</p>
+</li>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//$arr = array(10,20,30,40,50);</span></span><br><span class="line">	$arr = <span class="keyword">array</span>(</span><br><span class="line">		<span class="string">'key1'</span> =&gt; <span class="number">100</span>,</span><br><span class="line">		<span class="string">'key2'</span> =&gt; <span class="number">200</span>,</span><br><span class="line">		<span class="string">'key3'</span> =&gt; <span class="number">300</span>,</span><br><span class="line">		<span class="string">'key4'</span> =&gt; <span class="number">400</span>,</span><br><span class="line">	);</span><br><span class="line">	<span class="comment">//完整的使用方式 $arr表示要遍历的数组  $key表示属性名(索引)  $val 表示属性值</span></span><br><span class="line">	<span class="keyword">foreach</span>($arr <span class="keyword">as</span> $key =&gt; $val)&#123;</span><br><span class="line">		<span class="keyword">echo</span> $key;<span class="comment">//打印属性名</span></span><br><span class="line">		<span class="keyword">echo</span> $val;<span class="comment">//打印属性值</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//另一种方式，只是用属性值</span></span><br><span class="line"></span><br><span class="line">	<span class="keyword">foreach</span>($arr <span class="keyword">as</span> $val)&#123;</span><br><span class="line">		<span class="keyword">echo</span> $val;<span class="comment">//打印属性值</span></span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>变量解析的新方式</p>
+</li>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//使用场景：</span></span><br><span class="line">	$foo = <span class="string">"jack"</span>;</span><br><span class="line">	<span class="comment">//情况1：</span></span><br><span class="line">	<span class="comment">//当字符串中需要解析的是数组，并且属性名使用了单引号的形式时，必须使用&#123;&#125;,否则会出现报错。</span></span><br><span class="line">	$str = <span class="string">"我是&#123;$arr['name1']&#125;"</span>;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//情况2：</span></span><br><span class="line">	<span class="comment">//如果打印的字符串内部具有变量名，并且变量名后面紧跟着其他的字符，无法进行正确的识别，就需要使用&#123;&#125;的方式</span></span><br><span class="line">	<span class="keyword">echo</span> <span class="string">"&#123;$foo&#125;Group is a good group."</span>;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>array_values()；获取数组所有元素值；</p>
+<ul>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">获取数组中的所有元素值：返回的结果是索引数组print_r(array_values($arr));</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>array_keys()；获取所有属性名；</p>
+<ul>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//基本使用，获取所有的属性名</span></span><br><span class="line">	print_r(array_keys($arr));</span><br><span class="line"><span class="comment">//传入参数2，获取指定值对应的属性名（不严谨的检测，会进行类型的隐式转换）</span></span><br><span class="line">	print_r(array_keys($arr,<span class="number">200</span>));</span><br><span class="line"><span class="comment">//传入参数3，布尔类型 true表示严格的检测方式</span></span><br><span class="line">	print_r(array_keys($arr,<span class="number">200</span>,<span class="keyword">true</span>));</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>array_key_exists();检测某个属性值是否存在：</p>
+<ul>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//返回值是布尔类型，但是通过echo或print_r的方式，true是1，false显示不了</span></span><br><span class="line">	<span class="comment">//使用var_dump()即可</span></span><br><span class="line">	var_dump(array_key_exists(<span class="string">'key1'</span>, $arr));</span><br><span class="line">	var_dump(array_key_exists(<span class="string">'key6'</span>, $arr));</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>in_array();检测某个值是否存在：</p>
+<ul>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//检测某个值是否存在：返回布尔类型值</span></span><br><span class="line">	var_dump(in_array(<span class="number">200</span>,$arr));</span><br><span class="line">	var_dump(in_array(<span class="number">400</span>,$arr));</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>四个基本操作函数</p>
+<ul>
+<li>array_push()；在最后添加；</li>
+<li>array_pop()；删除最后一个；</li>
+<li>array_shift()；添加到第一个；</li>
+<li>array_unshift()；删除第一个；</li>
+</ul>
+</li>
+<li><p>php中取整用：intval();</p>
+</li>
+</ul>
+<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><ul>
+<li><p>php中的函数名不区分大小写，推荐使用蛇底式snake_case命名方式；</p>
+</li>
+<li><p>php的函数返回值在使用时，低版本要求必须先进行返回值的保存(保存在变量中)，再进行使用。我们最好也遵循这个规则</p>
+</li>
+<li><p>php中的变量起作用的范围只存在于声明他的那个作用域；</p>
+<p>php中不存在js中的那种作用域链访问规则(机制)；</p>
+<p>php中的错误信息默认不完全显示，使用error_reporting(E_ALL);可以展示出错误信息；</p>
+</li>
+<li><p>php中的所有函数都是全局函数，任意的地方都可以访问；php中不推荐使用函数嵌套的书写方式(用不用都可以，无关紧要)；</p>
+</li>
+<li><p><strong>字符串操作函数</strong></p>
+<ul>
+<li><p>Strlen()；检测字符串的长度；</p>
+</li>
+<li><p>我们在使用strlen()检测中文时，发现长度不正确：</p>
+<ul>
+<li>宽字符集：中文、日文、韩文</li>
+<li>对于宽字符集需要使用一些特殊的处理函数</li>
+</ul>
+</li>
+<li><p>Php中使用mb_strlen();发现函数不能使用，需要对php进行配置文件的修改：</p>
+<ul>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">发现函数不能使用，需要对php进行配置文件的修改</span><br><span class="line">	<span class="number">1</span> 找到php根目录下的 php.ini开头的两个文件，找到开发版本复制一个，修改名称为php.ini</span><br><span class="line">	<span class="number">2</span> 在php.ini中找到 (扩展文件路径) extension_dir  将路径设置为php文件夹中的ext文件夹的绝对路径  <span class="number">735</span>+行</span><br><span class="line">	<span class="number">3</span> 找到extension=php_mbstring.dll  将前面的注释;去除。  <span class="number">900</span>+行</span><br><span class="line">	<span class="number">4</span> 到apache的配置文件httpd.conf中，设置php的配置文件位置，可以放置在php模块加载的位置 PhpIniDir C:/wamp/php</span><br><span class="line">	<span class="number">5</span> 重启apache</span><br><span class="line">	<span class="number">6</span> 调用函数并打印结果</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>phpinfo();查看php的相关配置信息;</p>
+</li>
+</ul>
+</li>
+<li><p>substr()；截取字符串，不可以截取中文；mb_substr()；可以截取中文字符串；</p>
+</li>
+<li><p>大小写转换:</p>
+<ul>
+<li>Strtoupper()；转换为大写</li>
+<li>Strtolower()；转换为小写</li>
+</ul>
+</li>
+<li><p>trim()；去除字符串两端的空格(默认)，或指定字符;</p>
+<ul>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">trim(‘zzzabczzz’,’z’);去除abc两边的z</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>strpos();  mb_strpos();查找某个字符的索引位置</p>
+<ul>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> strpos(<span class="string">'ftaftfat'</span>,<span class="string">'a'</span>);</span><br><span class="line"><span class="keyword">echo</span> strpos(<span class="string">'ftaftfat'</span>,<span class="string">'a'</span>,<span class="number">2</span>);<span class="comment">//从索引值2开始查找</span></span><br><span class="line"><span class="keyword">echo</span> mb_strpos(<span class="string">'哈哈哈啊哈哈啊哈哈'</span>, <span class="string">'啊'</span>,<span class="number">4</span>);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>str_replace替换：</p>
+<ul>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> str_replace(<span class="string">'啊'</span>, <span class="string">'嘿'</span>, <span class="string">'哈哈啊嗨'</span>);<span class="comment">//嘿替换啊；</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>str_repeat()生成重复的字符串</p>
+<ul>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> str_repeat(<span class="string">'啊和'</span>, <span class="number">10</span>);<span class="comment">//生成10个啊和；</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>ecplode();截取，返回索引数组</p>
+<ul>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var_dump(explode(<span class="string">'-'</span>,<span class="string">'a-b-c-d-e-f-g-h'</span>));<span class="comment">//以-截取</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="PHP中的常量"><a href="#PHP中的常量" class="headerlink" title="PHP中的常量"></a>PHP中的常量</h2><ul>
+<li>常量不可以修改，常量名称不需要$；</li>
+<li>定义常量的方式：define(常量名称，常量值，参数三)，命名推荐使用全大写的形式，参数三表示当前常量是否大小写敏感，默认是false，为敏感，true表示不敏感；</li>
+<li>什么时候使用常量：<ul>
+<li>网站开发过程中需要使用一些不会修改的值时，可以设置为常量；<ul>
+<li>例如，数据库的用户名与密码</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>在使用关联数组时，推荐属性名必须为单引号包裹的，可以防止不经意间出现错误；</li>
+<li>重复定义常量 会出现低级别的报错；</li>
+</ul>
+<h2 id="引入：require和include"><a href="#引入：require和include" class="headerlink" title="引入：require和include"></a>引入：require和include</h2><ul>
+<li>使用require 作用为引入另一个文件的所有代码；被引入的文件内部代码会执行，并且内部的所有变量与函数均可以被本页面使用</li>
+<li>require的这种文件引入方式表示一种依赖，换句话说，没有这个文件就不行(后边什么也不做了)</li>
+<li>require 的基本使用场景：<ul>
+<li>当我们需要加载的文件是一些配置文件时，必须使用require；</li>
+<li>例如，网站开发必须要使用数据库技术，数据库一定有用户名和密码，而这个同户名和密码不会修改；</li>
+<li>require_once 如果是引入配置文件，并且配置文件存在了常量，就需要使用require_once，防止出现常量重复定义的报错；</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>include表示包含，意味着如果有就是用这个文件，如果没有，那就算了；</li>
+<li>include 的基本使用场景：<ul>
+<li>include 引入的文件没有也行</li>
+<li>当我们进行页面模块的引入时，推荐使用include(当前引入的模块即使出现问题，其余的部分也可以显示)；</li>
+<li>Include_once 通常用于进行模块的加载，所以不会出现常量重复定义的问题，使用比较灵活；</li>
+</ul>
+</li>
+</ul>
+<h2 id="PHP数组与js数组的区别"><a href="#PHP数组与js数组的区别" class="headerlink" title="PHP数组与js数组的区别"></a>PHP数组与js数组的区别</h2><ul>
+<li><p>定义方式：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a)	Js：<span class="keyword">new</span> <span class="keyword">Array</span>();</span><br><span class="line">b)	Php：<span class="keyword">array</span>();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>php关联数组的赋值方式为：键名=&gt;值;</p>
+</li>
+<li><p>Php数组获取长度是方式为count();</p>
+</li>
+<li><p>当我们使用关联数组时，推荐将属性名设置为字符串;</p>
+</li>
+<li><p>可以变量解析;</p>
+</li>
+</ul>
+<h2 id="time函数"><a href="#time函数" class="headerlink" title="time函数"></a>time函数</h2><ul>
+<li><p>time() 函数的结果为1970-1-1 到当前的时间的秒数；</p>
+</li>
+<li><p>使用time函数获取的结果是格林威治时间，需要配置为中国时区；</p>
+<ul>
+<li><p>更改php的配置文件，设置一下默认时区即可：</p>
+<p>1、打开php.ini</p>
+<p>2、搜索 date.timezone</p>
+<p>3、设置值为PRC</p>
+</li>
+</ul>
+</li>
+<li><p>将字符换转换为秒数</p>
+<ul>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$str = <span class="string">'2013-12-11 2:3:3'</span>;</span><br><span class="line">$time = strtotime($str);</span><br><span class="line"><span class="keyword">echo</span> date(<span class="string">'Y-m-d h:i:s'</span>,$time);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h2><ul>
+<li><p>我们将前端页面的数据发送到服务端后，服务端会有针对性的对数据进行持久化操作（保存在一个文件中，例如txt）；</p>
+</li>
+<li><p>file_put_contents()；用于给一个文件进行内容写入操作。</p>
+<ul>
+<li><p>参数1 表示要操作的文件的路径（可以是绝对路径，也可以是相对路径）</p>
+</li>
+<li><p>参数2 要写入的内容；</p>
+</li>
+<li><p>效果：如果文件存在，直接写入，否则，创建一个文件后再写入；</p>
+</li>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.1 默认的写入方式为覆盖写入</span></span><br><span class="line">file_put_contents(<span class="string">'file.txt'</span>, <span class="string">'呵呵'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//1.2 追加写入：设置参数3为常量FILE_APPEND</span></span><br><span class="line">file_put_contents(<span class="string">'file.txt'</span>, <span class="string">'哈哈哈'</span>, FILE_APPEND);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>file_get_contents();用于读取文件内容；</p>
+<ul>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> file_get_contents(<span class="string">'file.txt'</span>);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="form表单操作"><a href="#form表单操作" class="headerlink" title="form表单操作"></a>form表单操作</h2><ul>
+<li><p>全局变量的使用（了解即可）</p>
+<ul>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$num = <span class="number">100</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fun</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="comment">//global表示引用全局作用域下的$num变量</span></span><br><span class="line">	<span class="keyword">global</span> $num;</span><br><span class="line">	<span class="keyword">echo</span> $num;<span class="comment">//100</span></span><br><span class="line">&#125;</span><br><span class="line">fun();</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>超全局变量：php代码中的任意位置均可访问，并且是系统内置的；</p>
+<ul>
+<li><p>请求接受参数的三种方式：都是关联数组形式：键位name，值为name对应的值；</p>
+<ul>
+<li>$_GET 用于接受GET请求发送的参数；</li>
+<li>$_POST 用于接受POST请求发送的参数；</li>
+<li>$_REQUEST 使用GET或POST的请求方式，均可以接受参数；</li>
+</ul>
+</li>
+<li><p>通常进行请求的参数是一些敏感信息时，使用GET的方式不安全，可以使用POST的方式；</p>
+</li>
+<li><p>GET方式发送请求会将请求的参数书写在url地址中；</p>
+</li>
+<li><p>表单提交通常采用POST的请求方式，并且设置为本页面的请求；</p>
+</li>
+<li><p>当服务端接收到POET请求后，根据用户名和密码打印一段文字；</p>
+</li>
+<li><p>如何判断当前的请求是什么形式的：</p>
+<ul>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> $_SERVER[<span class="string">'REQUEST_METHOD'</span>];</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="PHP第5天"><a href="#PHP第5天" class="headerlink" title="PHP第5天"></a>PHP第5天</h1><h3 id="文件获取内容写入"><a href="#文件获取内容写入" class="headerlink" title="文件获取内容写入"></a>文件获取内容写入</h3><ul>
+<li><p>由于表单提交通常使用POST向本页面提交，可以使用pjp中的一个超全局变量的属性得到当前页面的路径</p>
+<ul>
+<li>$_SERVER[‘PHP_SELF’]表示当前页面；</li>
+<li>isset()函数：用于检测某个变量的或数组的索引是否存在（可以避免不存在出现的提示）</li>
+<li>is_file()用于检测文件是否存在，返回布尔值；</li>
+</ul>
+</li>
+<li><p>放入文件操作的步骤</p>
+<p>​    1、确定发请求的方式是POST；</p>
+<p>​    2、服务端判断请求是什么方式发送的：GET不要，POST要；</p>
+<p>​    3、根据业务需求进行ifelse设置</p>
+<p>​        i.获取POST的三个参数，检测username和password</p>
+<p>​        ii.php中的数组索引不存在，会弹出一个注意消息，在使用前就应当进行检测，看看这个索引有没有</p>
+<p>​    4、数据均满足需求，将数据尝试保存到文件中</p>
+<p>​    5、进行数据文件内容检测</p>
+<p>​        i.先检测是否有这个文件</p>
+<p>​        ii.没有这个文件，直接写入</p>
+<p>​        iii.有这个文件：</p>
+<p>​            a、进行内容获取</p>
+<p>​            b、处理数据，得到每个用户的名字</p>
+<p>​            c、跟$username进行比较（假设成立法）</p>
+<p>​            d、根据结果进行判断即可（进行放入，或者进行提示）；</p>
+</li>
+</ul>
+<h3 id="form操作"><a href="#form操作" class="headerlink" title="form操作"></a>form操作</h3><ul>
+<li><p>form中action属性如果不设置值，默认就是提交到本页面，通常还是设置一个当前页面的路径</p>
+<ul>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;form action=<span class="string">"&lt;?php echo $_SERVER['PHP_SELF']; ?&gt;"</span> method=<span class="string">"POST"</span>&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>单选按钮提交时，只会讲on发送给服务端，需要进行value属性的设置；</p>
+</li>
+<li><p>多个复选框：当我们使用多个复选框，并且功能是统一的，可以设置name的值为统一的 名[] 的形式；</p>
+</li>
+<li><p>下拉列表value属性设置就行</p>
+</li>
+<li><p>form上传文件时，需要设置属性值：enctype=”multipart/form-data”；</p>
+<ul>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;form action=<span class="string">"&lt;?php echo $_SERVER['PHP_SELF']; ?&gt;"</span> method=<span class="string">"POST"</span> enctype=<span class="string">"multipart/form-data"</span>&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>input文件上传是要设置Type属性为file；</p>
+<ul>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- accept 用于设置可以接受的文件类型，可以使用MIMEtype,也可以使用后缀名，使用逗号连接 --&gt;</span><br><span class="line">  &lt;input type=<span class="string">"file"</span> id=<span class="string">"source"</span> name=<span class="string">"source"</span> accept=<span class="string">".mp3,.png"</span>&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>​</p>
+</li>
+</ul>
+<h1 id="PHP第6天"><a href="#PHP第6天" class="headerlink" title="PHP第6天"></a>PHP第6天</h1><h3 id="FILES使用"><a href="#FILES使用" class="headerlink" title="$_FILES使用"></a>$_FILES使用</h3><ul>
+<li><p>$_FILES：超全局变量，用来接收POST方式上传的文件数组形式；</p>
+<ul>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$_FILES[<span class="string">'source'</span>][<span class="string">'error'</span>]只有在<span class="number">0</span>时，才上传成功；</span><br><span class="line">  	<span class="number">0</span>: <span class="string">"上传成功"</span></span><br><span class="line">	<span class="number">1</span>: <span class="string">"上传文件超过了PHP配置文件中upload_max_filesize选项的值"</span>;</span><br><span class="line"> 	<span class="number">2</span>: <span class="string">"超过了表单MAX_FILE_SIZE的限制大小"</span>;</span><br><span class="line"> 	<span class="number">3</span>: <span class="string">"文件部分被上传"</span>;</span><br><span class="line"> 	<span class="number">4</span>: <span class="string">"没有选择上传文件"</span>;</span><br><span class="line"> 	<span class="number">6</span>: <span class="string">"没有找到临时目录"</span>;</span><br><span class="line"> 	<span class="number">7</span>, <span class="number">8</span>: <span class="string">"系统错误"</span>;*/</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>​</p>
+</li>
+</ul>
+</li>
+<li><p>move uploaded file()：将上传文件移动到新位置；</p>
+</li>
+</ul>
+<h3 id="json文件的储存与使用"><a href="#json文件的储存与使用" class="headerlink" title="json文件的储存与使用"></a>json文件的储存与使用</h3><ul>
+<li>JSON是一种数据储存形式，与js或者php之类的东西都没有必要的联系；<ul>
+<li>JSON中支持的数据形式：<ul>
+<li>字符串 数值 布尔值 数组 对象</li>
+</ul>
+</li>
+<li>JSON中不支持注释操作：可以通过一个单独的注释文件去标记每个属性的含义</li>
+</ul>
+</li>
+<li>json_decode()：反序列化：将文本信息变成一个可以使用的数据结构，例如数组;<ul>
+<li>有可选参数2，可设置返回结构的类型，true 全部为关联数组</li>
+</ul>
+</li>
+<li>json_encode：序列化操作，将关联数组转换为JSON编码的string形式；</li>
+</ul>
+<h3 id="检测变量"><a href="#检测变量" class="headerlink" title="检测变量"></a>检测变量</h3><ul>
+<li>isset();检测变量是否设置，并且不能是null，返回布尔值；</li>
+<li>empty();先检测这个值有没有。如果有在检测是不是false(隐式转换)。返回布尔值，true表示没有或者为false，如果结果为false，说明有并且不为false（隐式转换）；<ul>
+<li>注意：如果输入内容为0，会转换为false；</li>
+</ul>
+</li>
+</ul>
+<h3 id="php上传文件限制修改"><a href="#php上传文件限制修改" class="headerlink" title="php上传文件限制修改"></a>php上传文件限制修改</h3><ul>
+<li>上传文件时，php有默认的上传文件大小限制2M</li>
+<li>php.ini →搜索upload_max_filesize→设置值为（根据需求自己选择大小）→重启aoache</li>
+</ul>
+<h1 id="php第七天"><a href="#php第七天" class="headerlink" title="php第七天"></a>php第七天</h1><h3 id="删除按钮操作"><a href="#删除按钮操作" class="headerlink" title="删除按钮操作"></a>删除按钮操作</h3><ul>
+<li><p>删除操作按钮步骤：</p>
+<p>1、想要删除某个数据，需要先让服务端知道你要操作的数据是哪一个；</p>
+<p>2、可以通过发请求的方式将id发送到服务端；</p>
+<p>3、如果需要进行数据的提交，可以使用form的方式，但是书写比较复杂；</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;form action=<span class="string">"del.php"</span> method=<span class="string">"POST"</span>&gt;</span><br><span class="line">&lt;input type=<span class="string">"text"</span> value=<span class="string">"&lt;?php echo $datas['id']; ?&gt;"</span> name=<span class="string">"id"</span>&gt;</span><br><span class="line">&lt;button type=<span class="string">"submit"</span>&gt;提交&lt;/button&gt;</span><br><span class="line">&lt;/form&gt;</span><br></pre></td></tr></table></figure>
+<p>4、采用url地址传参：</p>
+<p>​    1.使用GET方式发送的请求参数在url中；</p>
+<p>​    2.使用a标签进行参数的拼接，好处在于简便；</p>
+<p>​    3.要传递的参数信息为删除的数据id，不是敏感数据；</p>
+</li>
+<li><p>服务端的处理逻辑</p>
+<p>1、检测请求方式</p>
+<p>2、检测是否发送了id参数</p>
+<p>3、获取json数据，进行反序列化操作</p>
+<p>4、检测数据，找到要删除的数据</p>
+<p>​    array_search() 用于检索数组中指定元素的索引值，参数2为数组；</p>
+<p>​    array_splice() 用于删除数组中的制动元素，参数1为数组，参数2为数组，参数3为删除的长度 不写默认索引值后面所有；</p>
+<p>5、确认删除操作后的数据是正确的</p>
+<p>6、数据写入json</p>
+<p>7、重定向到列表页（跳转）</p>
+</li>
+<li><p>uniquid() 可以生成一个随机的字符串，函数会尽量保证这个值不会重复；</p>
+</li>
+</ul>
+<h3 id="设置多个文件上传"><a href="#设置多个文件上传" class="headerlink" title="设置多个文件上传"></a>设置多个文件上传</h3><ul>
+<li>如果设置多个文件的请求，$_FILES只会显示最后一个文件</li>
+<li>设置文件域的name为添加[]的形式后，$_FILES中会具有一个文件域的name所对应的值，这个文件域中name的每个属性都变成了一个数组；</li>
+<li>查看数据时，可以使用for循环进行所有信息的展示；</li>
+</ul>
+<h3 id="设置cookie"><a href="#设置cookie" class="headerlink" title="设置cookie"></a>设置cookie</h3><ul>
+<li><p>cookie的作用是为了解决HTTP的无状态特性的。</p>
+</li>
+<li><p>让客户端在多次访问服务端时，服务端可以对客户端进行识别的一种手段。</p>
+</li>
+<li><p>查看方式：chrome → F12 → Application → Cookie → <a href="http://toutiao.io" target="_blank" rel="noopener">http://toutiao.io</a> (最后的域名部分可以选择任意一个)</p>
+</li>
+<li><p>cookie是一个 name 对 value 的组合形式</p>
+</li>
+<li><p>设置cookie的方式：</p>
+<ul>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">setcookie(<span class="string">'title'</span>,<span class="string">'content'</span>);</span><br><span class="line"><span class="comment">//setcookie的参数3表示当前cookie的存在时间(生命周期);</span></span><br><span class="line"><span class="comment">//参数3为数值，以秒为单位，如果不写，默认为session，表示本次会话结束cookie失效;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>setcookie的时间参数推荐书写为 7 <em> 24 </em> 60 * 60 的形式，目的为方便修改</p>
+</li>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">setcookie(<span class="string">'title'</span>,<span class="string">'content'</span>,time() + <span class="number">7</span> * <span class="number">24</span> * <span class="number">60</span> * <span class="number">60</span>);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>设置cookie前后，请求头和响应头的操作与区别：</p>
+<ul>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1 第一次访问2cookie时的请求头 内部是没有cookie的值的</span></span><br><span class="line">	<span class="comment">//GET /2cookie.php HTTP/1.1</span></span><br><span class="line">	<span class="comment">//Host: www.day7.cn</span></span><br><span class="line">	<span class="comment">//Connection: keep-alive</span></span><br><span class="line">	<span class="comment">//Accept-Encoding: gzip, deflate</span></span><br><span class="line">	<span class="comment">//Accept-Language: zh-CN,zh;q=0.9</span></span><br><span class="line"><span class="comment">//2 第一次访问的响应头 内部有一句  Set-cookie ...</span></span><br><span class="line">	<span class="comment">/*Connection:Keep-Alive</span></span><br><span class="line"><span class="comment">		Content-Length:0</span></span><br><span class="line"><span class="comment">		Set-Cookie:title=content</span></span><br><span class="line"><span class="comment">		X-Powered-By:PHP/7.1.9*/</span></span><br><span class="line"><span class="comment">//3 第二次请求头中含了一个Cookie的值，就是第一次的Set-Cookie设置的</span></span><br><span class="line">	<span class="comment">/*GET /2cookie.php HTTP/1.1</span></span><br><span class="line"><span class="comment">		Host: www.day7.cn</span></span><br><span class="line"><span class="comment">		Connection: keep-alive</span></span><br><span class="line"><span class="comment">		Cookie: title=content</span></span><br><span class="line"><span class="comment">		Accept-Encoding: gzip, deflate</span></span><br><span class="line"><span class="comment">		Accept-Language: zh-CN,zh;q=0.9</span></span><br><span class="line"><span class="comment">		*/</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="PHP第八天"><a href="#PHP第八天" class="headerlink" title="PHP第八天"></a>PHP第八天</h1><h3 id="对比cookie与session"><a href="#对比cookie与session" class="headerlink" title="对比cookie与session"></a>对比cookie与session</h3><pre><code>###### 1、cookie
+</code></pre><ul>
+<li>服务端将数据原内容发送给客户端保存，每次发起请求是客户端带着cookie访问</li>
+<li>由于原始数据保存在客户端，所以可能会出现被用户修改的情况</li>
+</ul>
+<h6 id="2、session"><a href="#2、session" class="headerlink" title="2、session"></a>2、session</h6><ul>
+<li>用户的原始数据保存在服务端（用户无法直接操作），发送给用户保存的是数据的标识（令牌）</li>
+<li>客户端发送请求会带着令牌来，如果令牌与服务端的数据对应，则可以使用原始数据</li>
+<li>虽然令牌在客户端可以进行修改等操作，但是修改后就无法对应客户端的令牌了，同样无法操作原始数据；</li>
+<li>每次想要使用session时，需要先使用session_start()这个函数</li>
+</ul>
+<h6 id="3、何时使用"><a href="#3、何时使用" class="headerlink" title="3、何时使用"></a>3、何时使用</h6><ul>
+<li>不要因为session安全就全部使用session</li>
+<li>多数情况下还是使用普通cookie更多，因为使用方便；session只有涉及到存有用户数据或状态的时候才会使用</li>
+<li>session比较耗费性能<ul>
+<li>session_start()  作用为开启session的功能</li>
+</ul>
+</li>
+<li>如果你想要自动启动session功能，可以从PHP的配置文件中进行设置<ul>
+<li>session.auto_start = 0 将值修改为1即可，但是不推荐这种方式；</li>
+</ul>
+</li>
+</ul>
+<h3 id="js中操作cookie的方式"><a href="#js中操作cookie的方式" class="headerlink" title="js中操作cookie的方式"></a>js中操作cookie的方式</h3><h6 id="1、获取"><a href="#1、获取" class="headerlink" title="1、获取"></a>1、获取</h6><ul>
+<li>document.cookie</li>
+</ul>
+<h6 id="2、设置新cookie"><a href="#2、设置新cookie" class="headerlink" title="2、设置新cookie"></a>2、设置新cookie</h6><ul>
+<li>给document.cookie赋值，不会覆盖已有的cookie，而是进行新建操作（除非设置的键已经存在）</li>
+</ul>
+<h6 id="3、修改cookie"><a href="#3、修改cookie" class="headerlink" title="3、修改cookie"></a>3、修改cookie</h6><ul>
+<li>设置document.cookie=…</li>
+<li>设置的键为指定要修改的某个键后，设置新值即可；</li>
+</ul>
+<h6 id="4、删除cookie"><a href="#4、删除cookie" class="headerlink" title="4、删除cookie"></a>4、删除cookie</h6><ul>
+<li><p>设置expires属性的值为当前时间或之前的时间，让cookie过期即可；</p>
+<ul>
+<li><p>正常的设置过期时间：</p>
+</li>
+<li><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> date = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">date.setDate();<span class="comment">//设置为某个特定时间</span></span><br><span class="line"><span class="built_in">document</span>.cookie = <span class="string">'name=rose;path=/login;expires='</span>+date.toGMTString();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置cookie立刻过期</p>
+</li>
+<li><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.cookie = <span class="string">'name=rose;path=/login;expires='</span>+date.tpGMTString();</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>toGMTString() 得到的结果为cookie需要的日期格式；</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><h6 id="1、为什么要使用数据库"><a href="#1、为什么要使用数据库" class="headerlink" title="1、为什么要使用数据库"></a>1、为什么要使用数据库</h6><ul>
+<li>以前保存数据，使用过txt和json</li>
+</ul>
+<h6 id="2、数据库是什么样的？"><a href="#2、数据库是什么样的？" class="headerlink" title="2、数据库是什么样的？"></a>2、数据库是什么样的？</h6><ul>
+<li>跟excel是完全相同的形式，以表为单位，每个表中有多行和多列，每一行是一条数据，每一列（字段）表示某条数据中的一个数据</li>
+<li>数据库也是一种服务器，称为数据库服务器，想要使用数据库的服务功能，就要安装对应的服务器软件；</li>
+<li>数据库的软件分类：<ul>
+<li>MySQL、Oracle、sqlserver、access</li>
+</ul>
+</li>
+</ul>
+<h6 id="3、安装MySQL数据库"><a href="#3、安装MySQL数据库" class="headerlink" title="3、安装MySQL数据库"></a>3、安装MySQL数据库</h6><ul>
+<li><p>详见：帮助文档/06-mysql.pdf</p>
+<p>​    </p>
+</li>
+</ul>
+<h1 id="PHP第九天"><a href="#PHP第九天" class="headerlink" title="PHP第九天"></a>PHP第九天</h1><h3 id="数据库字符集设置"><a href="#数据库字符集设置" class="headerlink" title="数据库字符集设置"></a>数据库字符集设置</h3><ul>
+<li>当我们在数据库中保存数据时，发现中文出现报错，应当修改字符集</li>
+</ul>
+<h6 id="1、基本步骤："><a href="#1、基本步骤：" class="headerlink" title="1、基本步骤："></a>1、基本步骤：</h6><ul>
+<li>修改某个字段的字符集→修改表的字符集→修改某个数据库的字符集→修改连接的数据库中的配置文件</li>
+</ul>
+<h6 id="2、配置文件设置方式："><a href="#2、配置文件设置方式：" class="headerlink" title="2、配置文件设置方式："></a>2、配置文件设置方式：</h6><ul>
+<li>设置数据库保存数据时的默认编码</li>
+<li>在my.ini 中添加<ul>
+<li>character_set_server=utf8</li>
+</ul>
+</li>
+</ul>
+<h3 id="函数与limit操作"><a href="#函数与limit操作" class="headerlink" title="函数与limit操作"></a>函数与limit操作</h3><h6 id="1、count"><a href="#1、count" class="headerlink" title="1、count()"></a>1、count()</h6><ul>
+<li><p>用于查看某个字段的数据条数</p>
+</li>
+<li><p>不推荐使用count(*) 查询所有的数据，太消耗性能，没必要</p>
+<ul>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select count(*) from user;</span><br><span class="line">select count(id) from user;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>select 1 from 表；展示的结果中每条数据都会包含这个1</p>
+<ul>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select 1,id,name from user;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>获取数据总条数时会使用下面的这种方式：</p>
+<ul>
+<li><p>好处：不用检索表中的真实数据，快、准确(可以当成固定格式记下来)</p>
+</li>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select count(1) from user;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h6 id="2、max-min"><a href="#2、max-min" class="headerlink" title="2、max()  min()"></a>2、max()  min()</h6><ul>
+<li><p>获取对应字段的最大值和最小值，通常用于数值检测；</p>
+<ul>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select max(id) from user;</span><br><span class="line">select min(id) from user;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h6 id="3、avg"><a href="#3、avg" class="headerlink" title="3、avg()"></a>3、avg()</h6><ul>
+<li><p>获取平均值</p>
+<ul>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select avg(id) from user;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h6 id="4、limit"><a href="#4、limit" class="headerlink" title="4、limit"></a>4、limit</h6><ul>
+<li><p>限制获取的数据条数；</p>
+</li>
+<li><p>limit n：表示要获取表最前面的n条数据，如果没有这么多，能取多少取多少</p>
+<ul>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from user limit 20;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>limit n m ：‘n’表示检索的起始条数的索引，‘m’表示要检索的条数</p>
+<ul>
+<li><p>注意：只要一提索引，一定是从0开始的，比生活中的个数少1；</p>
+</li>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select * from user limit 0,3;--从第一条开始取3条数据</span><br><span class="line">select * from user limit 3,3;--从第4条开始取3条数据</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>注意：mysql中不支持limit后面为负数，需要使用后面学的排序操作；</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="php中操作mysqli"><a href="#php中操作mysqli" class="headerlink" title="php中操作mysqli"></a>php中操作mysqli</h3><ul>
+<li>想要使用php操作mysqli需要通过mysqli的系列函数，这些函数属于php的扩展，需要进行开启<ul>
+<li>位置：”php.ini→extensino=php_mysqli.dll”去除这一行的前面的分号；</li>
+</ul>
+</li>
+</ul>
+<h6 id="1、连接数据库"><a href="#1、连接数据库" class="headerlink" title="1、连接数据库"></a>1、连接数据库</h6><ul>
+<li><p>musqli_connect()  函数返回的是一个连接对象，如果没有连接成功，返回布尔值false；php与mysql是相互独立的，如果想要让php可以操作mysql，需要通过这个连接对象进行操作；</p>
+</li>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//mysqli_connect();需要放入4个参数，1、ip；2、用户名；3、密码；4、数据库名</span></span><br><span class="line">$connect = mysqli_connect($ip,$username,$password,$db_name);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>die()和exit()使用会直接结束代码执行；参数为字符串，可以在结束时将信息打印，两者功能相同；</p>
+</li>
+</ul>
+<h6 id="2、执行查询"><a href="#2、执行查询" class="headerlink" title="2、执行查询"></a>2、执行查询</h6><ul>
+<li><p>返回值为结果集，不是真正的数据，如果查询失败返回false</p>
+</li>
+<li><p>结果集：实际上可以理解为真正的数据的绳子，绳子的那一端是数据，这一端在手里</p>
+<ul>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$query = mysqli_query($connect,<span class="string">"select * from lists;"</span>);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h6 id="3、对数据的处理"><a href="#3、对数据的处理" class="headerlink" title="3、对数据的处理"></a>3、对数据的处理</h6><ul>
+<li><p>mysqli_fitch_assoc();</p>
+<ul>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//获取的结果为关联数组的形式</span></span><br><span class="line">$result = mysqli_fetch_assoc($query);</span><br><span class="line"><span class="comment">//使用mysqli_fetch_assoc()获取的结果每次都是一条新的数据内容</span></span><br><span class="line"><span class="comment">//如果找完最后一条数据后，结果为null；</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>​</p>
+</li>
+<li><p>可以使用循环获取内容</p>
+<ul>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//正确的获取内容方式</span></span><br><span class="line"><span class="keyword">while</span>($result = mysqli_fetch_assoc($query))&#123;</span><br><span class="line">		var_dump($result);</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="非查询-select-查询语句-增删改-操作"><a href="#非查询-select-查询语句-增删改-操作" class="headerlink" title="非查询(select)查询语句(增删改)操作"></a>非查询(select)查询语句(增删改)操作</h3><h6 id="1、连接数据库-1"><a href="#1、连接数据库-1" class="headerlink" title="1、连接数据库"></a>1、连接数据库</h6><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$con = mysqli_connect(<span class="string">'127.0.0.1'</span>,<span class="string">'root'</span>,<span class="string">'123456'</span>,<span class="string">'test'</span>);</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>检测连接是否失败</p>
+</li>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(!$con)&#123;</span><br><span class="line">		<span class="keyword">exit</span>(<span class="string">'连接数据库失败!'</span>);</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h6 id="2、执行查询操作"><a href="#2、执行查询操作" class="headerlink" title="2、执行查询操作"></a>2、执行查询操作</h6><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$sql = <span class="string">"delete from user where id=12;"</span>;</span><br><span class="line">$query = mysqli_query($con,$sql);</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>检测是否查询成功</p>
+</li>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(!$query)&#123;</span><br><span class="line">		<span class="keyword">die</span>(<span class="string">'查询失败,语法有问题！'</span>);</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h6 id="3、检测操作是否如预期版生效"><a href="#3、检测操作是否如预期版生效" class="headerlink" title="3、检测操作是否如预期版生效"></a>3、检测操作是否如预期版生效</h6><ul>
+<li><p>如果正常删除一条数据的话，affectes rows的值应当为1，</p>
+</li>
+<li><p>此函数用于检测某个连接对象最后一次查询的受影响行数</p>
+</li>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$affected_rows = mysqli_affected_rows($con);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>检测</p>
+</li>
+<li><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>($affected_rows !== <span class="number">1</span>)&#123;</span><br><span class="line">		<span class="keyword">die</span>(<span class="string">'没有删除成功'</span>);</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>再进行后续操作；</p>
+</li>
+</ul>
+<h1 id="第十天AJAX-01"><a href="#第十天AJAX-01" class="headerlink" title="第十天AJAX-01"></a>第十天AJAX-01</h1><h3 id="ajax基本使用"><a href="#ajax基本使用" class="headerlink" title="ajax基本使用"></a>ajax基本使用</h3><p>​    ajax在js中的实现是一种XMLHttpRequest类型（构造函数）</p>
+<ul>
+<li><p>1、初始化：请求代理对象</p>
+<ul>
+<li><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//js本省不具备发送请求的能力，所以创建一个请求代理对象，让这个对象帮我发送请求</span></span><br><span class="line"><span class="keyword">var</span> xhr = <span class="keyword">new</span> XHLHttpRequest();</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>2、通过open方法，建立与服务端的连接</p>
+<ul>
+<li><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xhr.open(<span class="string">"GET"</span>,<span class="string">"hello-ajax.php"</span>);</span><br><span class="line"><span class="comment">//-------GET为请求方式，hello-ajax.php为地址</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>3、将请求发送到服务端</p>
+<ul>
+<li><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xhr.send();</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>4、ajax的响应内容不是通过返回值的方式直接获取的，而是通过事件的形式</p>
+<ul>
+<li><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//注意：这个事件不是只有在响应完全后才会触发</span></span><br><span class="line">xhr.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>.readyState);<span class="comment">//2 3 4</span></span><br><span class="line">  <span class="comment">//通过观察readyState的值，发现一共有5种情况</span></span><br><span class="line"><span class="comment">//0 - (初始化)</span></span><br><span class="line">  <span class="comment">//初始化请求代理对象完毕，但没有执行open</span></span><br><span class="line"><span class="comment">//1 - (建立连接)</span></span><br><span class="line">  <span class="comment">//执行了open方法，建立了与服务端的连接</span></span><br><span class="line"><span class="comment">//2 - (接收到响应头)</span></span><br><span class="line">  <span class="comment">//请求已经发送，已经可以接受到响应头</span></span><br><span class="line"><span class="comment">//3 - (下载中)</span></span><br><span class="line">  <span class="comment">//已经接受到了一部分响应体内容</span></span><br><span class="line">	<span class="comment">//	只有当特殊情况下(响应体内容少，网速		快)可以获取到完整的响应体</span></span><br><span class="line"><span class="comment">//4 - (完成)</span></span><br><span class="line">  <span class="comment">//获取到所有的响应体内容</span></span><br><span class="line"><span class="comment">//之所以事件内没有获取到1234的所有状态，是因为书写位置的问题</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//获取响应头：</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">this</span>.getAllResponseHeaders())；</span><br><span class="line"><span class="comment">//获取响应体</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">this</span>.responseText);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>只有在readyState值为4时，才可以正常获取响应体的内容</p>
+<ul>
+<li><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(<span class="keyword">this</span>.readyState !== <span class="number">4</span>)&#123;<span class="keyword">return</span>;&#125;;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">this</span>.responseText);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="GET发送请求"><a href="#GET发送请求" class="headerlink" title="GET发送请求"></a>GET发送请求</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//--------GET发送请求，以及参数传递</span></span><br><span class="line"><span class="comment">//1 初始化请求代理对象</span></span><br><span class="line">	<span class="keyword">var</span> xhr = <span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line"><span class="comment">//2 与服务端建立连接</span></span><br><span class="line"><span class="comment">//2.1 在open的参数2url中可以直接拼接GET请求的参数</span></span><br><span class="line">	xhr.open(<span class="string">"GET"</span>,<span class="string">"hello-ajax.php?id=3&amp;age=18"</span>);</span><br><span class="line"><span class="comment">//设置请求头信息</span></span><br><span class="line">	xhr.setRequestHeader(<span class="string">"name"</span>,<span class="string">"jack"</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//3 发送请求:如果不发送请求参数，设置值为null即可</span></span><br><span class="line">	xhr.send(<span class="literal">null</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="POST发送请求"><a href="#POST发送请求" class="headerlink" title="POST发送请求"></a>POST发送请求</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//--------POST发送请求，以及参数传递</span></span><br><span class="line"><span class="comment">//1 初始化请求代理对象</span></span><br><span class="line">	<span class="keyword">var</span> xhr = <span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line"><span class="comment">//2 与服务端建立连接</span></span><br><span class="line">	xhr.open(<span class="string">"POST"</span>,<span class="string">"hello-ajax.php"</span>);</span><br><span class="line"><span class="comment">//3 发送请求:</span></span><br><span class="line">	<span class="comment">//"id=200&amp;age=17&amp;name=jack"  这种形式的数据类型		称为  urlencoded</span></span><br><span class="line">	<span class="comment">//注意：以后只要设置这种形式的数据进行请求发送，一		定要设置如下的Content-Type</span></span><br><span class="line">	xhr.setRequestHeader(<span class="string">"Content-Type"</span>,<span class="string">"application/x-www-form-urlencoded"</span>);</span><br><span class="line">	<span class="comment">//post请求可以将参数拼接为urlencoded的形式，通过send发送给服务端。</span></span><br><span class="line">	xhr.send(<span class="string">"id=200&amp;age=17&amp;name=jack"</span>);</span><br><span class="line"><span class="comment">//4 设置事件</span></span><br><span class="line">	xhr.onreadystatechange = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="comment">//5 检测readyState的值，为4，接收响应体</span></span><br><span class="line">		<span class="keyword">if</span>(<span class="keyword">this</span>.readyState !== <span class="number">4</span>)&#123; <span class="keyword">return</span>; &#125;</span><br><span class="line">		<span class="comment">//获取所有的响应头</span></span><br><span class="line">		<span class="built_in">console</span>.log(<span class="keyword">this</span>.getAllResponseHeaders());</span><br><span class="line">		<span class="comment">//获取指定响应头信息</span></span><br><span class="line">		<span class="built_in">console</span>.log(<span class="keyword">this</span>.getResponseHeader(<span class="string">"server"</span>));</span><br><span class="line">		<span class="comment">//获取响应体</span></span><br><span class="line">		<span class="built_in">console</span>.log(<span class="keyword">this</span>.responseText);</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>想要将一个json字符串转换为json对象形式，可以使用 JSON.parse()</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/01/24/PHP笔记/" data-id="cjcsqqnzk0000p0w30m5hthkk" class="article-share-link">Compartir</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/01/24/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Viejo</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archivos</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Posts recientes</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/01/24/PHP笔记/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/01/24/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Construido por <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
